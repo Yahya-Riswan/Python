@@ -1,0 +1,18 @@
+def isPrime(n):
+    if n<=1:
+        return False
+    elif n==2:
+        return True
+    elif n % 2 == 0:
+        return False
+    else:
+        for i in range(3, int(n**0.5) + 1, 2):
+            if n % i == 0:
+                return False
+    
+    return True
+
+print(isPrime(4))
+print(isPrime(15))
+print(isPrime(7))
+print(isPrime(9))
