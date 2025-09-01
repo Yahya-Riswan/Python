@@ -1,4 +1,4 @@
-class Bank:
+class BankAccount:
     def __init__(self, balance):
         self.__balance = balance   # private variable
 
@@ -11,7 +11,7 @@ class Bank:
     def get_balance(self):
         return self.__balance
 
-b = Bank(1000)
+b = BankAccount(1000)
 print(b.get_balance()) 
 b.deposit(500)
 print(b.get_balance()) 
